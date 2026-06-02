@@ -19,5 +19,5 @@ Goal is to deliver saas, and utilize the webpage for orders and management of or
     App runs on localhost:3333, hardcoded value in app.js line 59    
 
 
-    ![Alt text](image.png)
-    ![Alt text](image-1.png)
+![Alt text](image.png)
+![Alt text](image-1.png)
