@@ -1,0 +1,226 @@
+:root {
+  --blueDeepSpace: #153243;
+  --blueMid: #1E4A5F;
+  --lightYellow: #FDFCDC;
+  --accent: #00A8E8;
+  --grayText: #4A4A4A;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--grayText);
+  background: white;
+}
+
+/* Colors */
+.btn-accent {
+  color: var(--lightYellow);
+  background-color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.btn-accent:hover {
+  color: var(--grayText);
+  opacity: 85%;
+}
+
+
+.logo img {
+  background-color: var(--accent);
+  border: 1px solid var(--blueMid);
+  border-radius: 25px 0px 25px 0px;
+  display: block;
+  height: 75px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Header */
+.ob-header {
+  background: var(--blueDeepSpace);
+  padding: 20px 0;
+  color: white;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  margin-left: 20px;
+  color: var(--lightYellow);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Buttons */
+/* .btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+} */
+
+.btn.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn.primary:hover {
+  opacity: 0.85;
+  border: 2px solid var(--accent);
+  transition: background-color 0.3s ease;
+}
+
+.btn-ghost {
+  color: var(--accent)
+}
+
+.btn.ghost {
+  border: 2px solid var(--accent);
+  color: var(--lightYellow);
+}
+
+.btn.ghost:hover {
+  opacity: 0.85;
+  background-color: var(--blueMid);
+  border: 2px solid var(--lightYellow);
+}
+
+/* Hero */
+.hero {
+  background: var(--blueDeepSpace);
+  color: var(--lightYellow);
+  padding: 100px 0;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-card {
+  background: var(--blueMid);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+.section.alt {
+  background: var(--lightYellow);
+}
+
+/* Features */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step .num {
+  font-size: 32px;
+  color: var(--accent);
+}
+
+/* Pricing */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.pricing-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.pricing-card:hover {
+  border: 2px solid var(--accent);
+  transition: border 0.15s ease;
+}
+
+/* Footer */
+.footer {
+  background: var(--blueDeepSpace);
+  color: var(--lightYellow);
+  padding: 40px 0;
+}
+
+.footer-links a {
+  margin-left: 20px;
+  color: var(--lightYellow);
+}
+
+/* Root text colors */
+.text-rootSpaceBlue {
+  color: var(--blueDeepSpace);
+}
+
+.text-rootBlueMid {
+  color: var(--blueMid);
+}
+
+.text-rootYellow {
+  color: var(--lightYellow);
+}
+
+.text-rootGray {
+  color: var(--grayText);
+}
+
+.text-rootAccent {
+  color: var(--accent);
+}
+
+/* Root border */
+.border-rootSpaceBlue {
+  border: 3px solid var(--blueDeepSpace);
+}
+
+/* Root backgroundcolors */
+.bg-rootBlue {
+  background-color: var(--blueDeepSpace);
+}

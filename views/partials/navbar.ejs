@@ -1,0 +1,32 @@
+<div class="container nav-container">
+    <a class="logo" href="/">
+        <img id="logo" src="/images/oceanbytes-logo.svg" alt="OceanBytes logo" />
+    </a>
+    <nav class="col">
+        <% if(typeof index !== 'undefined' && index) { %>
+            <a href="#features">Funksjoner</a>
+            <a href="#how-it-works">Slik fungerer det</a>
+            <a href="#pricing">Priser</a>
+            <a href="#contact">Kontakt</a>
+        <%}%>
+        <%if (username) {%>
+            <div class="d-inline">
+                <a class="opacity-75 text-rootAccent"
+                <% if(role === 'admin') { %>
+                    <%='href=/admin'%>
+            <%}%>
+                >
+                    <%=username%>
+                </a>
+                <a class="btn btn-outline-danger" onclick="logOut()">
+                    Log out
+                </a>
+            </div>
+        <%} else {%>
+                <a href="/login" class="opacity-50">
+                    Log in
+                </a>
+        <%}%>
+            <a href="/signup" class="p-2 rounded btn-accent">Prøv gratis</a>
+    </nav>
+</div>

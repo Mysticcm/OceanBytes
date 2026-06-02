@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <header class="ob-header">
+    <%- include('partials/navbar') %>
+  </header>
+  <div class="container my-5 py-5">
+      <div class="h2 mb-4">Forespørsler</div>
+      <!-- Section load pending requests-->
+      <section class="mx-5 m-auto">
+          <button class="btn btn-primary my-4 p-4 list-group-item list-group-item-action list-group-item-primary text-center fw-medium" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#pendingReq" 
+            aria-expanded="false" 
+            aria-controls="pendingReq">
+            Forespørsler
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                Ny
+            </span>
+        </button>
+        <div class="collapse collapse-horizontal" id="pendingReq">
+            <div class="card card-body border border-rootSpaceBlue">
+                
+            </div>
+        </div>
+    </section>
+    <!-- Section load requests in progress-->
+    <section class="mx-5 m-auto">
+        <button 
+            class="btn btn-primary my-4 p-4 list-group-item list-group-item-action list-group-item-warning text-center fw-medium" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#reqInProgress" 
+            aria-expanded="false" 
+            aria-controls="reqInProgress">
+            Påbegynte forespørsler
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                Ny
+            </span>
+    </button>
+    <div class="collapse collapse-horizontal" id="reqInProgress">
+        <div class="card card-body border border-rootSpaceBlue">
+            
+        </div>
+    </div>
+</section>
+<!-- Section load requests completed-->
+<section class="mx-5 m-auto">
+    <button class="btn btn-primary my-4 p-4 list-group-item list-group-item-action list-group-item-success text-center fw-medium" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#completedReq" 
+        aria-expanded="false" 
+        aria-controls="completedReq">
+        Fullførte forespørsler 
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            Ny
+        </span>
+    </button>
+    <div class="collapse collapse-horizontal" id="completedReq">
+        <div class="card card-body border border-rootSpaceBlue">
+
+        </div>
+    </div>
+</section>
+</div>
+
+
+
+
+<%- include('partials/footer') %>
+</body>
+</html>

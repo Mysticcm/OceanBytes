@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body>
+  <header class="ob-header">
+    <%- include('partials/navbar') %>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Dataflyt som havstrømmer – stabil, skalerbar og sikker.</h1>
+        <p>
+          OceanBytes er en skybasert plattform for datainnsamling, analyse og integrasjon.
+          Bygget for moderne team som trenger innsikt uten kompleksitet.
+        </p>
+        <div class="hero-buttons">
+          <a href="/signup" class="btn primary">Start gratis</a>
+          <a href="#how" class="btn ghost">Se hvordan</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="dashboard-card">
+          <h3>Live dataoversikt</h3>
+          <p>Sanntidsstrømmer, alarmer og nøkkeltall samlet på ett sted.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Nøkkelfunksjoner</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Sanntidsinnsikt</h3>
+          <p>Overvåk nøkkeltall og hendelser i sanntid med tilpassede dashboards.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Enkle integrasjoner</h3>
+          <p>Koble til API-er, databaser og tredjepartstjenester med få klikk.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Skalerbar arkitektur</h3>
+          <p>Plattformen vokser med deg – uten at du må tenke på servere.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Sikkerhet først</h3>
+          <p>Kryptering, rollebasert tilgang og revisjonslogger som standard.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="section alt">
+    <div class="container">
+      <h2>Slik fungerer det</h2>
+
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Koble til kilder</h3>
+          <p>Legg til API-er, databaser eller IoT-enheter.</p>
+        </div>
+
+        <div class="step">
+          <span class="num">2</span>
+          <h3>Konfigurer flyt</h3>
+          <p>Sett opp regler, transformasjoner og alarmer.</p>
+        </div>
+
+        <div class="step">
+          <span class="num">3</span>
+          <h3>Analyser i dashboardet</h3>
+          <p>Visualiser og del innsikt med teamet ditt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2>Priser</h2>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <p class="price">Gratis (30 dager)</p>
+          <ul>
+            <li>Opptil 3 datakilder</li>
+            <li>Grunnleggende dashboards</li>
+            <li>E-postsupport</li>
+          </ul>
+          <a href="/signup" class="btn primary">Kom i gang</a>
+        </div>
+
+        <div class="pricing-card highlight">
+          <h3>Growth</h3>
+          <p class="price">499 kr/mnd</p>
+          <ul>
+            <li>Ubegrensede datakilder</li>
+            <li>Avanserte regler og alarmer</li>
+            <li>Prioritert support</li>
+          </ul>
+          <a href="/signup" class="btn primary">Velg Growth</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Enterprise</h3>
+          <p class="price">Kontakt oss</p>
+          <ul>
+            <li>Skreddersydde integrasjoner</li>
+            <li>Dedikert kundekontakt</li>
+            <li>SLA og sikkerhetsavtaler</li>
+          </ul>
+          <a href="#contact" class="btn primary">Snakk med oss</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Kontakt oss</h2>
+      <p>Vil du se en demo eller diskutere behovene deres?</p>
+
+      <form action="/contact" method="post" class="contact-form">
+        <label>Navn</label>
+        <br/>
+        <input type="text" name="name" required />
+
+        <br/>
+        <label>E-post</label>
+        <br/>
+        <input type="email" name="email" required />
+
+        <br/>
+        <label>Melding</label>
+        <textarea class="form-control" name="message" rows="4" required></textarea>
+
+        <button class="btn primary mt-2">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
